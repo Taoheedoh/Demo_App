@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       //title: 'Demo App',
       //theme: ThemeData(
        // primarySwatch: Colors.blue,  
@@ -26,7 +27,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
+        title: Text('Demo App'),
+      ),
+      body: Center(
+        child: Image.network('https://64.media.tumblr.com/646582ce56427a29f45f1c723a3c6335/e3c6185ff74a3b47-1a/s1280x1920/831b52048d23c94d9324f1fd95aaa34719608a64.jpg'),
       ),
     );
   }
