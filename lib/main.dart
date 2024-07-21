@@ -28,7 +28,8 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Demo App'),
-        foregroundColor: Colors.brown,
+        titleTextStyle: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+        foregroundColor: Color.fromARGB(255, 232, 188, 172),
         backgroundColor: const Color.fromARGB(255, 82, 8, 3),
       ),
       body: Center(
